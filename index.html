@@ -9,11 +9,11 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
+            margin: 50px auto auto auto;
             padding: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: start;
             height: 100vh;
             background-color: #f4f4f4;
         }
@@ -180,8 +180,8 @@
             return (
                 <div className="app-container">
                     <h1>Lista de Tareas</h1>
-                    <TaskList tasks={tasks} onComplete={handleComplete} onDelete={handleDelete} />
                     <TaskForm onAddTask={handleAddTask} />
+                    <TaskList tasks={tasks} onComplete={handleComplete} onDelete={handleDelete} />
                 </div>
             );
         };
